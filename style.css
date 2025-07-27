@@ -1,26 +1,27 @@
-/* Reset and base styles */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
   font-family: 'Helvetica Neue', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #f5f3ff; /* Lavender Mist */
   color: #333;
   padding: 0 1rem;
 }
 
-/* Layout containers */
+/* Layout Containers */
 header, section, footer {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 1rem;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Header */
@@ -31,13 +32,13 @@ header {
 
 header h1 {
   font-size: 2rem;
-  color: #111;
+  color: #2d2d2d;
   margin-bottom: 0.5rem;
 }
 
 header p {
   font-size: 1rem;
-  color: #555;
+  color: #666;
   margin-bottom: 1.5rem;
 }
 
@@ -48,34 +49,49 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 nav a {
   text-decoration: none;
-  color: #0066cc;
+  color: #ff6f61; /* Coral Blush */
   font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #e0f7f4; /* Mint Cream */
+  color: #6c8cc5; /* Dusty Blue */
 }
 
-/* Sections */
+/* Section Headers */
 section h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #eee;
   padding-bottom: 0.5rem;
+  color: #444;
 }
 
+/* Service & Project Items */
 .service, .project {
   margin-bottom: 1rem;
 }
 
 .service h3 {
-  color: #222;
+  color: #2e2e2e;
   font-size: 1.2rem;
   margin-bottom: 0.25rem;
+}
+
+.service p, .project {
+  background-color: #fdfdfd;
+  border-left: 5px solid #ff6f61;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
 }
 
 /* Portfolio Grid */
@@ -86,16 +102,20 @@ section h2 {
 }
 
 .project {
-  background-color: #f1f1f1;
-  padding: 1rem;
-  border-radius: 6px;
+  background-color: #e0f7f4; /* Mint Cream */
+  color: #2e2e2e;
   text-align: center;
+  border-left: none;
 }
 
-/* Contact */
+/* Contact Links */
 #contact a {
-  color: #0066cc;
-  text-decoration: underline;
+  color: #6c8cc5;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #ff6f61;
 }
 
 /* Footer */
@@ -103,7 +123,6 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #777;
-  margin-bottom: 2rem;
   background: none;
   box-shadow: none;
   padding: 1rem 0;
@@ -122,4 +141,20 @@ footer {
   .service h3 {
     font-size: 1rem;
   }
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #A8DADC;
+  color: #1D3557;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background-color: #89C2D9;
 }
