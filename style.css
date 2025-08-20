@@ -9,8 +9,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.8;
-  background-color: #1e1e2f; /* Deep Dark Purple */
-  color: #e4e4f3; /* Light Lavender */
+  background-color: #0A2540; /* Dark Blue */
+  color: #007BFF; /* Blue */
   padding: 0 1rem;
 }
 
@@ -29,12 +29,12 @@ header, section, footer {
 
 /* Section Separators */
 section {
-  border-top: 2px solid #f9a826; /* Vibrant Gold Line */
+  border-top: 2px solid #00BFA5; /* Green */
   padding-top: 2rem;
 }
 
 header {
-  border-bottom: 2px solid #f9a826;
+  border-bottom: 2px solid #00BFA5;
   padding-bottom: 2rem;
 }
 
@@ -46,13 +46,13 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #f9a826; /* Vibrant Gold */
+  color: #00BFA5; /* Green */
   margin-bottom: 0.5rem;
 }
 
 header p {
   font-size: 1.1rem;
-  color: #a8a8d9; /* Soft Lavender */
+  color: #007BFF; /* Blue */
   margin-bottom: 1.5rem;
 }
 
@@ -68,24 +68,24 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #f9a826; /* Vibrant Gold */
+  color: #00BFA5; /* Green */
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background: linear-gradient(45deg, #f9a826, #ff5e62); /* Gold to Coral Gradient */
+  background: linear-gradient(45deg, #00BFA5, #007BFF); /* Green to Blue Gradient */
   transition: all 0.3s ease-in-out;
 }
 
 nav a:hover {
-  background: linear-gradient(45deg, #ff5e62, #f9a826); /* Reverse Gradient */
-  color: #1e1e2f; /* Dark Background Contrast */
+  background: linear-gradient(45deg, #007BFF, #00BFA5); /* Reverse Gradient */
+  color: #0A2540; /* Dark Blue */
 }
 
 /* Section Headers */
 section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #e4e4f3; /* Light Lavender */
+  color: #007BFF; /* Blue */
 }
 
 /* Service & Project Items */
@@ -94,7 +94,7 @@ section h2 {
 }
 
 .service h3 {
-  color: #f9a826; /* Vibrant Gold */
+  color: #00BFA5; /* Green */
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -102,7 +102,7 @@ section h2 {
 .service p, .project {
   padding: 1rem 1.5rem;
   font-size: 1rem;
-  color: #a8a8d9; /* Soft Lavender */
+  color: #007BFF; /* Blue */
 }
 
 /* Portfolio Grid */
@@ -113,8 +113,8 @@ section h2 {
 }
 
 .project {
-  background-color: #ff5e62; /* Coral */
-  color: #1e1e2f; /* Dark Background Contrast */
+  background-color: #007BFF; /* Blue */
+  color: #0A2540; /* Dark Blue */
   text-align: center;
   padding: 1rem;
   border-radius: 8px;
@@ -123,30 +123,30 @@ section h2 {
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(255, 94, 98, 0.5);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.5); /* Blue Shadow */
 }
 
 /* Contact Links */
 #contact a {
-  color: #1e1e2f; /* Dark Background Contrast */
+  color: #0A2540; /* Dark Blue */
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background: linear-gradient(45deg, #f9a826, #ff5e62);
+  background: linear-gradient(45deg, #00BFA5, #007BFF);
   transition: all 0.3s ease-in-out;
 }
 
 #contact a:hover {
-  color: #e4e4f3; /* Light Lavender */
-  background: linear-gradient(45deg, #ff5e62, #f9a826);
+  color: #007BFF; /* Blue */
+  background: linear-gradient(45deg, #007BFF, #00BFA5);
 }
 
 /* Footer */
 footer {
   text-align: center;
   font-size: 0.9rem;
-  color: #a8a8d9; /* Soft Lavender */
+  color: #007BFF; /* Blue */
   padding: 1rem 0;
 }
 
@@ -173,16 +173,16 @@ footer {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 1rem 2rem;
-  background: linear-gradient(45deg, #f9a826, #ff5e62);
-  color: #1e1e2f; /* Dark Background Contrast */
+  background: linear-gradient(45deg, #00BFA5, #007BFF);
+  color: #0A2540; /* Dark Blue */
   font-weight: bold;
   text-decoration: none;
   border-radius: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(249, 168, 38, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 191, 165, 0.5); /* Green Shadow */
 }
 
 .cta-button:hover {
-  background: linear-gradient(45deg, #ff5e62, #f9a826);
-  box-shadow: 0 6px 16px rgba(249, 168, 38, 0.8);
+  background: linear-gradient(45deg, #007BFF, #00BFA5);
+  box-shadow: 0 6px 16px rgba(0, 191, 165, 0.8); /* Green Shadow */
 }
