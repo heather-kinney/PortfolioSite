@@ -7,21 +7,21 @@
 
 /* Body Styling */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-  background-color: #f5f3ff; /* Lavender Mist */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  background-color: #f9f9f9; /* Light Gray */
   color: #333;
   padding: 0 1rem;
 }
 
 /* Layout Containers */
 header, section, footer {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 2rem auto;
-  padding: 1rem;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
@@ -31,14 +31,14 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
-  color: #2d2d2d;
+  font-size: 2.5rem;
+  color: #222;
   margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #555;
   margin-bottom: 1.5rem;
 }
 
@@ -48,81 +48,95 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
-  color: #ff6f61; /* Coral Blush */
+  color: #0077cc; /* Blue */
   font-weight: bold;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 nav a:hover {
-  background-color: #e0f7f4; /* Mint Cream */
-  color: #6c8cc5; /* Dusty Blue */
+  background-color: #e6f7ff; /* Light Blue */
+  color: #0056a3; /* Darker Blue */
 }
 
 /* Section Headers */
 section h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #ddd;
   padding-bottom: 0.5rem;
   color: #444;
 }
 
 /* Service & Project Items */
 .service, .project {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .service h3 {
-  color: #2e2e2e;
-  font-size: 1.2rem;
-  margin-bottom: 0.25rem;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .service p, .project {
-  background-color: #fdfdfd;
-  border-left: 5px solid #ff6f61;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  font-size: 0.95rem;
+  background-color: #fafafa;
+  border-left: 6px solid #0077cc;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 /* Portfolio Grid */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .project {
-  background-color: #e0f7f4; /* Mint Cream */
-  color: #2e2e2e;
+  background-color: #e6f7ff; /* Light Blue */
+  color: #222;
   text-align: center;
   border-left: none;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Links */
 #contact a {
-  color: #6c8cc5;
+  color: #0056a3;
   font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #e6f7ff;
+  transition: all 0.3s ease-in-out;
 }
 
 #contact a:hover {
-  color: #ff6f61;
+  color: #ffffff;
+  background-color: #0077cc;
 }
 
 /* Footer */
 footer {
   text-align: center;
   font-size: 0.9rem;
-  color: #777;
+  color: #888;
   background: none;
   box-shadow: none;
   padding: 1rem 0;
@@ -131,30 +145,36 @@ footer {
 /* Responsive Typography */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   section h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .service h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  body {
+    padding: 0 0.5rem;
   }
 }
+
 .cta-button {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #A8DADC;
-  color: #1D3557;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #0077cc;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .cta-button:hover {
-  background-color: #89C2D9;
+  background-color: #0056a3;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
